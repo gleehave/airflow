@@ -1,16 +1,20 @@
 import requests
 import json
-import os
-from dotenv import load_dotenv
 
-load_dotenv(dotenv_path="./.env")
+# import os
+# from dotenv import load_dotenv
+# load_dotenv(dotenv_path="./.env")
 
-API_KEY = os.getenv('API_KEY')
-CHANNEL_HANDLE = "MrBeast"
+from airflow.decorators import task
+from airflow.models.variable import Variable
+
+API_KEY = Variable.get('API_KEY')
+CHANNEL_HANDLE = Variable.get('CHANNEL_HANDLE')
+maxResults = 50
 
 URL = f"https://youtube.googleapis.com/youtube/v3/channels?part=contentDetails&forHandle={CHANNEL_HANDLE}&key={API_KEY}"
 
-
+@task
 def get_playlist_id():
     try:
     
