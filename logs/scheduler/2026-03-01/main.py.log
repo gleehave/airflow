@@ -182,3 +182,24 @@ IndentationError: expected an indented block after 'with' statement on line 18
 [2026-03-01T04:53:20.973+0000] {logging_mixin.py:188} INFO - [2026-03-01T04:53:20.973+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2026-03-01T04:53:20.989+0000] {logging_mixin.py:188} INFO - [2026-03-01T04:53:20.989+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-03-01 05:00:00+00:00, run_after=2026-03-02 05:00:00+00:00
 [2026-03-01T04:53:21.003+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.091 seconds
+[2026-03-01T04:53:51.292+0000] {processor.py:161} INFO - Started process (PID=194) to work on /opt/airflow/dags/main.py
+[2026-03-01T04:53:51.293+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-03-01T04:53:51.295+0000] {logging_mixin.py:188} INFO - [2026-03-01T04:53:51.295+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-03-01T04:53:51.323+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-03-01T04:53:51.343+0000] {logging_mixin.py:188} INFO - [2026-03-01T04:53:51.343+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-03-01T04:53:51.355+0000] {logging_mixin.py:188} INFO - [2026-03-01T04:53:51.355+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-03-01 05:00:00+00:00, run_after=2026-03-02 05:00:00+00:00
+[2026-03-01T04:53:51.363+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.079 seconds
+[2026-03-01T04:54:21.565+0000] {processor.py:161} INFO - Started process (PID=201) to work on /opt/airflow/dags/main.py
+[2026-03-01T04:54:21.568+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-03-01T04:54:21.571+0000] {logging_mixin.py:188} INFO - [2026-03-01T04:54:21.570+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-03-01T04:54:21.594+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-03-01T04:54:21.613+0000] {logging_mixin.py:188} INFO - [2026-03-01T04:54:21.613+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-03-01T04:54:21.625+0000] {logging_mixin.py:188} INFO - [2026-03-01T04:54:21.625+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-03-01 05:00:00+00:00, run_after=2026-03-02 05:00:00+00:00
+[2026-03-01T04:54:21.634+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.078 seconds
+[2026-03-01T04:54:51.832+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/main.py
+[2026-03-01T04:54:51.833+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-03-01T04:54:51.835+0000] {logging_mixin.py:188} INFO - [2026-03-01T04:54:51.835+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-03-01T04:54:51.863+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-03-01T04:54:51.883+0000] {logging_mixin.py:188} INFO - [2026-03-01T04:54:51.883+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-03-01T04:54:51.896+0000] {logging_mixin.py:188} INFO - [2026-03-01T04:54:51.895+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-03-01 05:00:00+00:00, run_after=2026-03-02 05:00:00+00:00
+[2026-03-01T04:54:51.909+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.085 seconds
