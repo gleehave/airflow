@@ -53,3 +53,9 @@ CREATE ROLE
 ```
 
 ## Airflow - Webserver 작동
+<img width="1671" height="434" alt="스크린샷 2026-03-01 오후 1 43 01" src="https://github.com/user-attachments/assets/7b98f80b-c487-4faa-861a-c6d1347c6abd" />
+
+<img width="1674" height="334" alt="스크린샷 2026-03-01 오후 1 43 47" src="https://github.com/user-attachments/assets/b978126c-77fb-45c3-9ae7-473787ae6be7" />
+
+<img width="1669" height="317" alt="스크린샷 2026-03-01 오후 1 50 31" src="https://github.com/user-attachments/assets/49d60e64-b52d-4cc7-ab53-21cf8d96928c" />
+
