@@ -157,3 +157,17 @@ AttributeError: '_TaskDecorator' object has no attribute 'update_relative'
 [2026-03-08T04:17:07.237+0000] {logging_mixin.py:188} INFO - [2026-03-08T04:17:07.237+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2026-03-08T04:17:07.251+0000] {logging_mixin.py:188} INFO - [2026-03-08T04:17:07.251+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-03-06 05:00:00+00:00, run_after=2026-03-07 05:00:00+00:00
 [2026-03-08T04:17:07.266+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.149 seconds
+[2026-03-08T04:17:37.380+0000] {processor.py:161} INFO - Started process (PID=110) to work on /opt/airflow/dags/main.py
+[2026-03-08T04:17:37.381+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-03-08T04:17:37.382+0000] {logging_mixin.py:188} INFO - [2026-03-08T04:17:37.382+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-03-08T04:17:37.416+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-03-08T04:17:37.437+0000] {logging_mixin.py:188} INFO - [2026-03-08T04:17:37.437+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-03-08T04:17:37.450+0000] {logging_mixin.py:188} INFO - [2026-03-08T04:17:37.450+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-03-06 05:00:00+00:00, run_after=2026-03-07 05:00:00+00:00
+[2026-03-08T04:17:37.459+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.087 seconds
+[2026-03-08T04:18:07.653+0000] {processor.py:161} INFO - Started process (PID=117) to work on /opt/airflow/dags/main.py
+[2026-03-08T04:18:07.654+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-03-08T04:18:07.655+0000] {logging_mixin.py:188} INFO - [2026-03-08T04:18:07.655+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-03-08T04:18:07.681+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-03-08T04:18:07.704+0000] {logging_mixin.py:188} INFO - [2026-03-08T04:18:07.704+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-03-08T04:18:07.717+0000] {logging_mixin.py:188} INFO - [2026-03-08T04:18:07.717+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-03-06 05:00:00+00:00, run_after=2026-03-07 05:00:00+00:00
+[2026-03-08T04:18:07.726+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.078 seconds
