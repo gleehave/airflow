@@ -76,14 +76,15 @@ def extract_video_data(video_ids):
             
             response = requests.get(url)
             response.raise_for_status()
-            
-            for item in data.get("items",[]):
+            data = response.json()
+
+            for item in data.get("items", []):
                 video_id = item["id"]
                 snippet = item["snippet"]
                 contentDetails = item["contentDetails"]
                 statistics = item["statistics"]
-            
-                extract_video_data.append({
+
+                extracted_data.append({
                     "video_id": video_id,
                     "title": snippet["title"],
                     "publishedAt": snippet["publishedAt"],
