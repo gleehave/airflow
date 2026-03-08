@@ -59,3 +59,6 @@ CREATE ROLE
 
 <img width="1669" height="317" alt="스크린샷 2026-03-01 오후 1 50 31" src="https://github.com/user-attachments/assets/49d60e64-b52d-4cc7-ab53-21cf8d96928c" />
 
+## Airflow - JSON 추출
+<img width="1669" height="812" alt="스크린샷 2026-03-08 오후 1 51 53" src="https://github.com/user-attachments/assets/ba11164b-e7da-4edb-8569-e1c0a7ff3f7e" />
+
