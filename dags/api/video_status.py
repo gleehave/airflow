@@ -31,23 +31,30 @@ def get_playlist_id():
 @task
 def get_video_ids(playlist_id):
     video_ids = []
-    pageToken = None
+    page_token = None
 
     try:
         while True:
-            url = URL
-            if pageToken:
-                url += f"pageToken={pageToken}"
+            url = (
+                f"https://youtube.googleapis.com/youtube/v3/playlistItems"
+                f"?part=contentDetails&playlistId={playlist_id}&key={API_KEY}"
+            )
+            if page_token:
+                url += f"&pageToken={page_token}"
 
             response = requests.get(url)
             response.raise_for_status()
             data = response.json()
-            
-            video_ids += [item["contentDetails"]["videoId"] for item in data.get("items",[])]
-            pageToken = data.get("nextPageToken")
-            if not pageToken:
+
+            video_ids += [
+                item["contentDetails"]["videoId"]
+                for item in data.get("items", [])
+                if item.get("contentDetails", {}).get("videoId")
+            ]
+            page_token = data.get("nextPageToken")
+            if not page_token:
                 break
-        
+
         return video_ids
 
     except requests.exceptions.RequestException as e:

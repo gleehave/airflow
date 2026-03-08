@@ -1,0 +1,38 @@
+[2026-03-08T04:36:48.378+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-08T04:36:48.389+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: produce_json.get_video_ids manual__2026-03-08T04:36:46.534029+00:00 [queued]>
+[2026-03-08T04:36:48.393+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: produce_json.get_video_ids manual__2026-03-08T04:36:46.534029+00:00 [queued]>
+[2026-03-08T04:36:48.393+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-08T04:36:48.398+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): get_video_ids> on 2026-03-08 04:36:46.534029+00:00
+[2026-03-08T04:36:48.400+0000] {standard_task_runner.py:63} INFO - Started process 66 to run task
+[2026-03-08T04:36:48.403+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'produce_json', 'get_video_ids', 'manual__2026-03-08T04:36:46.534029+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpbgzlms4y']
+[2026-03-08T04:36:48.403+0000] {standard_task_runner.py:91} INFO - Job 14: Subtask get_video_ids
+[2026-03-08T04:36:48.426+0000] {task_command.py:426} INFO - Running <TaskInstance: produce_json.get_video_ids manual__2026-03-08T04:36:46.534029+00:00 [running]> on host 880b697773d3
+[2026-03-08T04:36:48.466+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='produce_json' AIRFLOW_CTX_TASK_ID='get_video_ids' AIRFLOW_CTX_EXECUTION_DATE='2026-03-08T04:36:46.534029+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-08T04:36:46.534029+00:00'
+[2026-03-08T04:36:48.467+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-08T04:36:48.790+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-08T04:36:48.792+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/api/video_status.py", line 46, in get_video_ids
+    video_ids += [item["contentDetails"]["videoId"] for item in data.get("items",[])]
+  File "/opt/airflow/dags/api/video_status.py", line 46, in <listcomp>
+    video_ids += [item["contentDetails"]["videoId"] for item in data.get("items",[])]
+KeyError: 'videoId'
+[2026-03-08T04:36:48.801+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=produce_json, task_id=get_video_ids, run_id=manual__2026-03-08T04:36:46.534029+00:00, execution_date=20260308T043646, start_date=20260308T043648, end_date=20260308T043648
+[2026-03-08T04:36:48.807+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 14 for task get_video_ids ('videoId'; 66)
+[2026-03-08T04:36:48.835+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2026-03-08T04:36:48.846+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-08T04:36:48.848+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
