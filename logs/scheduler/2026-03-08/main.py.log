@@ -660,3 +660,10 @@ ImportError: cannot import name 'get_task_logger' from 'airflow.utils.log' (/hom
 [2026-03-08T04:52:35.319+0000] {logging_mixin.py:188} INFO - [2026-03-08T04:52:35.319+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2026-03-08T04:52:35.333+0000] {logging_mixin.py:188} INFO - [2026-03-08T04:52:35.332+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-03-07 05:00:00+00:00, run_after=2026-03-08 05:00:00+00:00
 [2026-03-08T04:52:35.375+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.096 seconds
+[2026-03-08T04:53:05.631+0000] {processor.py:161} INFO - Started process (PID=97) to work on /opt/airflow/dags/main.py
+[2026-03-08T04:53:05.631+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-03-08T04:53:05.632+0000] {logging_mixin.py:188} INFO - [2026-03-08T04:53:05.632+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-03-08T04:53:05.652+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-03-08T04:53:05.672+0000] {logging_mixin.py:188} INFO - [2026-03-08T04:53:05.671+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-03-08T04:53:05.684+0000] {logging_mixin.py:188} INFO - [2026-03-08T04:53:05.684+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-03-07 05:00:00+00:00, run_after=2026-03-08 05:00:00+00:00
+[2026-03-08T04:53:05.693+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.068 seconds
