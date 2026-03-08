@@ -88,10 +88,10 @@ def extract_video_data(video_ids):
                     "video_id": video_id,
                     "title": snippet["title"],
                     "publishedAt": snippet["publishedAt"],
-                    "duration": contentDetails["duration"],
-                    "viewCount": statistics["viewCount"],
-                    "likeCount": statistics["likeCount"],
-                    "commentCount": statistics["commentCount"]
+                    "duration": contentDetails.get("duration", ""),
+                    "viewCount": statistics.get("viewCount", "0"),
+                    "likeCount": statistics.get("likeCount", "0"),
+                    "commentCount": statistics.get("commentCount", "0"),
                 })
         return extracted_data
 
